@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro 01 - Includere JavaScript in una pagina web</title>
+
+    <!-- 
+        È possibile aggiungere JavaScript nel tag head del documento HTML, ma questo potrebbe rallentare o bloccare il caricamento della pagina
+    -->
+    <!-- <script>
+        alert('Hello World');
+    </script> -->
+</head>
+
+<body>
+    <h1>Intro 01 - Includere JavaScript in una pagina web</h1>
+
+    <!-- 
+        È più corretto inserire JavaScript al fondo della pagina PRIMA della chiusura del tag body
+    -->
+    <!-- <script>
+        alert('Hello World');
+    </script> -->
+
+    <!-- 
+        Scrivere esplicitamente il nostro JavaScript direttamente all'interno del documento html non è sbagliato, però diventa "ingombrante" e fastidioso quando il codice è lungo e complesso.
+        Sarebbe meglio quindi mettere tutto il codice JavaScript in un file esterno e richiamarlo poi all'interno del documento HTML
+    -->
+    <script src="./js/01-includere-js.js"></script>
+</body>
+
+</html>
