@@ -122,11 +122,15 @@ console.log(string2);
 
 /* ------------------------------- esercizio 1 ------------------------------ */
 // Salvare un nome in una variabile e stamparlo in console senza l'iniziale
+let mioNome = "Davide";
+console.log(mioNome.substring(1));
 
 /* ------------------------------- esercizio 2 ------------------------------ */
 // Data una stringa, stamparla in console al contrario
 // Punti in più se risolta in 2 righe max, compreso il console.log
 let stringaEsempio = 'Ecco delle belle docce';
+let fraseAlContrario = stringaEsempio.split("").reverse().join("");
+console.log(fraseAlContrario);
 
 /* ------------------------------- esercizio 3 ------------------------------ */
 /* 
@@ -134,6 +138,9 @@ let stringaEsempio = 'Ecco delle belle docce';
     "immagineBG.jpg" -> "L'estensione del file è: jpg"
     "testoSito.docx" -> "L'estensione del file è: docx"
 */
+let nomeFile = "immagine.jpg";
+let estensione = nomeFile.split('.').pop();
+console.log("L'estensione del file è: " + estensione);
 
 /* ------------------------------- esercizio 4 ------------------------------ */
 /*
@@ -142,3 +149,16 @@ let stringaEsempio = 'Ecco delle belle docce';
     oggi sono a lezione -> Oggi Sono A Lezione
     Uppercase della prima lettera di ogni singola parola
 */
+let frase = "oggi sono a lezione fino alle nove";
+
+let fraseArray = frase.split(' ');
+console.log(fraseArray);
+let nuovaFrase = "";
+
+for (let i = 0; i < fraseArray.length; i++) {
+    let inizialeMaius = fraseArray[i][0].toUpperCase();
+    let restoParola = fraseArray[i].substring(1);
+    nuovaFrase += inizialeMaius + restoParola + " ";
+}
+
+console.log(nuovaFrase);
