@@ -31,3 +31,17 @@ console.log(age > 20);
 console.log(age < 20);
 console.log(age <= 25);
 console.log(age >= 25);
+
+let nome = 'Milo';
+
+console.log(nome == 'Milo');
+console.log(nome == 'milo'); // case sensitive
+console.log(nome > 'Laura'); // perché L viene prima di M nell'alfabeto
+console.log(nome > 'milo');
+
+
+/* 
+    Possiamo effettuare controlli ancora più precisi grazie a === e !== che, oltre a comparare i valori, ne comparano anche il tipo
+*/
+console.log(age === 25);
+console.log(age === '25');
