@@ -15,7 +15,7 @@ while (i < 5) {
 }
 
 /*
-    I cicli while sono un'alternativa ai cicli for. In genere si usa un ciclo while quando la condizione di continuazione non è legata a un contatore specifico o quandi si ha bisogno di maggiore flessibilità nella logica di controllo del ciclo.
+    I cicli while sono un'alternativa ai cicli for. In genere si usa un ciclo while quando la condizione di continuazione non è legata a un contatore specifico o quando si ha bisogno di maggiore flessibilità nella logica di controllo del ciclo.
     Al contrario, un ciclo for è spesso più adatto quando si ha un numero definito di iterazioni o quando si sta iterando su una sequenza
 */
 
