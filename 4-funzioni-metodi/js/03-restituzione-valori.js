@@ -46,24 +46,32 @@ function eseguiCalcolo(arrayNumeri) {
     }
 
     // console.log(listaPari);
-    stampaNumeriPari(listaPari);
+    // stampaNumeriPari(listaPari);
+    stampaListaNumeriV2(listaPari, elListaPari);
 }
 
 let elListaNumeri = document.getElementById('listaNumeri');
 let elListaPari = document.getElementById('listaPari');
 
-function stampaListaNumeri(listaNumeri) {
+// function stampaListaNumeri(listaNumeri) {
+//     for (let i = 0; i < listaNumeri.length; i++) {
+//         elListaNumeri.innerHTML += `<li>${listaNumeri[i]}</li>`;
+//     }
+// }
+
+// stampaListaNumeri(numeri);
+
+// function stampaNumeriPari(listaNumeriPari) {
+//     for (let i = 0; i < listaNumeriPari.length; i++) {
+//         elListaPari.innerHTML += `<li>${listaNumeriPari[i]}</li>`;
+//     }
+// }
+
+function stampaListaNumeriV2(listaNumeri, elementoUl) {
     for (let i = 0; i < listaNumeri.length; i++) {
-        elListaNumeri.innerHTML += `<li>${listaNumeri[i]}</li>`;
+        elementoUl.innerHTML += `<li>${listaNumeri[i]}</li>`;
     }
 }
 
-stampaListaNumeri(numeri);
-
-function stampaNumeriPari(listaNumeriPari) {
-    for (let i = 0; i < listaNumeriPari.length; i++) {
-        elListaPari.innerHTML += `<li>${listaNumeriPari[i]}</li>`;
-    }
-}
-
+stampaListaNumeriV2(numeri, elListaNumeri);
 eseguiCalcolo(numeri);
