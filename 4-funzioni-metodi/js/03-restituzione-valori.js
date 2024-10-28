@@ -75,3 +75,11 @@ function stampaListaNumeriV2(listaNumeri, elementoUl) {
 
 stampaListaNumeriV2(numeri, elListaNumeri);
 eseguiCalcolo(numeri);
+
+/*
+    DEBUGGER:
+    Ispeziona -> Sorgente/Source -> refresh della pagina -> selezione del file JS da debuggare
+        - StepOver  = salta oltre   = passa a riga successiva
+        - StepInto  = entra dentro  = entriamo nella/nel funzione/metodo
+        - Play      = esegui        = salta da un breakpoint al successivo
+*/
