@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #545454;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 64px 16px;
+}
+
+h1 {
+	margin-bottom: 32px;
+}
+
+h2 {
+	margin-bottom: 20px;
+	padding-left: 8px;
+	border-left: 4px solid #31c099;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 32px;
+	border-radius: 16px;
+}
+
+ul {
+	padding-left: 16px;
+	margin-bottom: 16px;
+	/* Per rimuovere/cambiare lo stile dei pallini della lista */
+	/* list-style-type: none; */
+}
+
+ul li {
+	margin-bottom: 8px;
+}
+
+#demo {
+	padding: 32px;
+	margin: 32px 0;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #31c099;
+	border-radius: 16px;
+}
+
+button {
+	color: #ffffff;
+	background-color: #31c099;
+	border: 1px solid #31c099;
+	font-size: 20px;
+	padding: 8px 32px;
+	border-radius: 4px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #208369;
+	border-color: #208369;
+}
+
+.error {
+	color: salmon;
+	padding: 10px;
+	border: 2px dashed salmon;
+	margin-top: 16px;
+}
+
+.success {
+	color: #31c099;
+	padding: 10px;
+	border: 2px dashed #31c099;
+	margin-top: 16px;
+}
+
+.lista li.fatto {
+	text-decoration: line-through;
+}
