@@ -91,3 +91,15 @@ button:hover {
 .lista li.fatto {
 	text-decoration: line-through;
 }
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	margin: 10px 0;
+	background: #eee;
+	text-align: center;
+	padding: 20px;
+}

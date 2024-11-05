@@ -20,7 +20,13 @@ btn.addEventListener('click', () => {
 let listItems = document.querySelectorAll('.lista li');
 
 listItems.forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('fatto');
+    // Quando si verifica un evento per il quale stiamo 'ascoltando,' il browser inserisce automaticamente nella callback function un parametro che indica un oggetto "evento" che contiene informazioni sull'evento avvenuto sulla pagina.
+    item.addEventListener('click', e => {
+        // console.log('Item cliccato');
+        // console.log(e);
+        // console.log(e.target);
+        // e.target.style.textDecoration = 'line-through';
+        // e.target.classList.add('fatto');
+        e.target.classList.toggle('fatto');
     })
 });
