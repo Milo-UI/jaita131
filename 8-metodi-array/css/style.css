@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #545454;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 64px 16px;
+}
+
+h1 {
+	margin-bottom: 32px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 32px;
+	border-radius: 16px;
+}
+
+ul {
+	padding-left: 16px;
+	margin-bottom: 16px;
+	/* Per rimuovere/cambiare lo stile dei pallini della lista */
+	/* list-style-type: none; */
+}
+
+ul li {
+	margin-bottom: 8px;
+}
+
+input {
+	font-size: 1.2rem;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+button,
+.btn {
+	color: #ffffff;
+	background-color: #31c099;
+	border: 1px solid #31c099;
+	font-size: 20px;
+	padding: 8px 32px;
+	border-radius: 4px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+	background-color: #208369;
+	border-color: #208369;
+}
+
+.error {
+	color: salmon;
+	padding: 10px;
+	border: 2px dashed salmon;
+	margin-top: 16px;
+}
+
+.success {
+	color: #31c099;
+	padding: 10px;
+	border: 2px dashed #31c099;
+	margin-top: 16px;
+}
+
+.feedback {
+	display: block;
+}
+
+.feedback.ok {
+	color: #31c099;
+	margin-bottom: 0.5rem;
+}
+
+.feedback.notOk {
+	color: salmon;
+	margin-bottom: 0.5rem;
+}
+
+input.ok {
+	border-color: #31c099;
+	background-color: #c0f9e7;
+}
+
+input.notOk {
+	border-color: salmon;
+	background-color: #f9c6c0;
+}
