@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JavaScript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- top section -->
+    <div class="intro">
+        <div class="container">
+            <h1>Quiz JavaScript</h1>
+        </div>
+    </div>
+
+    <!-- punteggio quiz -->
+    <div class="risultato d-none">
+        <div class="container">
+            <p>
+                Il tuo punteggio è: <span class="punteggio">0%</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz">
+        <div class="container">
+
+            <h2>Rispondi alle domande</h2>
+
+            <form class="quiz-form">
+
+                <div class="domanda">
+                    <h3>1. Quale dei seguenti è un tipo primitivo in JavaScript?</h3>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d1" value="A">
+                        <label>Array</label>
+                    </div>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d1" value="B">
+                        <label>String</label>
+                    </div>
+                </div>
+
+                <div class="domanda">
+                    <h3>2. Qual è il metodo corretto per aggiungere un elemento alla fine di un array?</h3>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d2" value="A">
+                        <label>array.push()</label>
+                    </div>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d2" value="B">
+                        <label>array.add()</label>
+                    </div>
+                </div>
+
+                <div class="domanda">
+                    <h3>3. Quale parola chiave viene utilizzata per dichiarare una variabile che non può essere riassegnata?</h3>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d3" value="A">
+                        <label>let</label>
+                    </div>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d3" value="B">
+                        <label>const</label>
+                    </div>
+                </div>
+
+                <div class="domanda">
+                    <h3>4. Quale dei seguenti metodio è utilizzato per convertire una stringa in un numero?</h3>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d4" value="A">
+                        <label>parseInt()</label>
+                    </div>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d4" value="B">
+                        <label>stringToNumber()</label>
+                    </div>
+                </div>
+
+                <div class="domanda">
+                    <h3>5. Quale operatore viene utilizzato per confrontare sia il valore che il tipo del dato?</h3>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d5" value="A">
+                        <label>==</label>
+                    </div>
+
+                    <div class="form-radio">
+                        <input type="radio" name="d5" value="B">
+                        <label>===</label>
+                    </div>
+                </div>
+
+                <div class="btn-invio">
+                    <input type="submit">
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
