@@ -3,7 +3,7 @@
 
     Spesso vorremo mostrare sulla nostra pagina dei dati che si trovano su un database o su un server da qualche parte (post, commenti, utenti, lista di canzoni, ecc). Utilizziamo una richiesta HTTP per raggiungere quel server o database per ottenere i dati che ci interessano e poi usarli come vogliamo. Per dire cosa vogliamo, facciamo delle richieste a quelli che si chiamano API endpoint, ovvero degli URL che il server rende accessibili.
 
-    La richiesta all'endpointt ci restituisce i dati sotto forma di JSON (JavaScript Object Notation), un formato di scambio dati facilmente leggibile da macchine e umani, molto simile appunto a come vengono scritti gli oggetti JavaScript. Nasce infatti da JS, ma è utilizzabile da tutti i linguaggi di programmazione.
+    La richiesta all'endpoint ci restituisce i dati sotto forma di JSON (JavaScript Object Notation), un formato di scambio dati facilmente leggibile da macchine e umani, molto simile appunto a come vengono scritti gli oggetti JavaScript. Nasce infatti da JS, ma è utilizzabile da tutti i linguaggi di programmazione.
 
     Esistono diversi tipi di richieste HTTP che indicano l'azione da eseguire:
 
@@ -29,7 +29,7 @@ request.addEventListener('readystatechange', () => {
     }
 })
 
-// Il metodo open() "prepara" la richiesta e ha bisogno di due argomenti: il ipo di richiesta che vogliao fare e dove vogliamo mandare la richiesta, quindi l'endpoint
+// Il metodo open() "prepara" la richiesta e ha bisogno di due argomenti: il tipo di richiesta che voglio fare e dove vogliamo mandare la richiesta, quindi l'endpoint
 request.open('GET', 'https://jsonplaceholder.typicode.com/todos');
 
 // Il metodo send() invia effettivamente la richiesta
