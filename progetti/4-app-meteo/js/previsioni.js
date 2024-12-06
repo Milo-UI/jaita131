@@ -1,4 +1,4 @@
-const key = 'Rai57yFsqMGRhZdhOHNKRWOes8Srmsuk';
+const key = 'vr68J2kAbYbVRbdzOZbQXpAvfGyt7tc6';
 
 // Otteniamo le informazioni meteo
 const getWeather = async (id) => {
@@ -22,10 +22,10 @@ const getCity = async (city) => {
     return data[0];
 };
 
-getCity('torino')
-    .then(data => {
-        getWeather(data.Key)
-            .then(data => console.log(data))
-            .catch(err => console.log(err))
-    })
-    .catch(err => console.log(err));
+// getCity('torino')
+//     .then(data => {
+//         getWeather(data.Key)
+//             .then(data => console.log(data))
+//             .catch(err => console.log(err))
+//     })
+//     .catch(err => console.log(err));
