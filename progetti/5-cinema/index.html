@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- 
@@ -21,8 +26,102 @@
         Utilizzare omdbapi!
 
         --- OPZIONALE ---
-        Il titolo del film e inomi degli attori, devono diventare dei link alla pagina corrispondente di Wikipedia
+        Il titolo del film e i nomi degli attori, devono diventare dei link alla pagina corrispondente di Wikipedia
     -->
-    
+
+    <header class="main-header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="#!">CINEMILO</a>
+            </div>
+
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="#!">chi siamo</a>
+                    </li>
+                    <li>
+                        <a href="#!">prenota</a>
+                    </li>
+                    <li>
+                        <a href="#!">offerte</a>
+                    </li>
+                    <li>
+                        <a href="#!">contatti</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <div class="carosello">
+
+                <a class="link-film" href="" target="_blank">
+                    <h2 class="titolo">Bel Filmone</h2>
+                </a>
+
+                <div class="container-loc-bott">
+                    <button class="prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <img class="locandina" src="https://via.placeholder.com/300x520" alt="">
+
+                    <button class="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+
+                <ul class="attori">
+                    <li>Io</li>
+                    <li>Tu</li>
+                    <li>Egli</li>
+                </ul>
+
+                <p class="durata">1243</p>
+                <p class="anno">1243</p>
+                <p class="genere">1244</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-ricerca">
+                    <h2>Cerca un film</h2>
+
+                    <form class="cerca">
+                        <label>Cerca un film</label>
+                        <input type="text" name="filmTitle" placeholder="Inserisci il titolo di un film">
+                    </form>
+
+                    <div class="trama"></div>
+                </div>
+
+                <div class="col-risultato">
+                    <h2 class="titolo-ricerca"></h2>
+                    <img class="poster-ricerca" src="" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
