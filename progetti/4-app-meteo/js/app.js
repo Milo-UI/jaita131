@@ -12,7 +12,10 @@ const updateUI = (data) => {
     // const cityDetails = data.cityDetails;
     // const weather = data.weather;
     // Destrutturare le proprietà
-    const { cityDetails, weather } = data;
+    const {
+        cityDetails,
+        weather
+    } = data;
 
     // aggiorniamo il template dei dettagli
     details.innerHTML = `
@@ -73,4 +76,13 @@ cityForm.addEventListener('submit', e => {
     updateCity(city)
         .then(data => updateUI(data))
         .catch(err => console.log(err));
+
+    // set local storage
+    localStorage.setItem('city', city);
 });
+
+if (localStorage.getItem('city')) {
+    updateCity(localStorage.getItem('city'))
+        .then(data => updateUI(data))
+        .catch(err => console.log(err));
+}
