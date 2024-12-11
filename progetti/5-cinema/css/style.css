@@ -194,6 +194,47 @@ input {
 	margin: 0.5rem 0;
 }
 
+/* --------------------------------- ricerca -------------------------------- */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.col-ricerca {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.col-ricerca form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.col-ricerca input {
+	margin-bottom: 1rem;
+}
+
+.col-ricerca label {
+	margin-bottom: 0.5rem;
+}
+
+.btn-cerca {
+	margin-left: auto;
+}
+
+.col-risultato {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
@@ -215,5 +256,22 @@ input {
 
 	.menu-icon {
 		display: none;
+	}
+
+	/* --------------------------------- ricerca -------------------------------- */
+	.row {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.col-ricerca {
+		/* Larghezza in % meno il gap più il gap diviso per il numero di colonne che vogliamo */
+		/* width: calc((50% - 1rem) + (1rem / 2)); */
+		width: 50%;
+	}
+
+	.col-risultato {
+		/* width: calc((50% - 1rem) + (1rem / 2)); */
+		width: 50%;
 	}
 }

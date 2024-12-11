@@ -127,3 +127,45 @@ btnNext.addEventListener('click', nextMovie);
 /* ------------------------- fine gestione carosello ------------------------ */
 
 /* -------------------------- gestione ricerca film ------------------------- */
+const titoloRicerca = document.querySelector('.titolo-ricerca');
+const posterRicerca = document.querySelector('.poster-ricerca');
+const trama = document.querySelector('.trama');
+const formCerca = document.querySelector('.cerca');
+
+function cercaFilm() {
+    let filmTitle = formCerca.filmTitle.value;
+    filmTitle.replace(' ', '+').trim();
+
+    const URL = `https://www.omdbapi.com/?t=${filmTitle}&apikey=4214e970`;
+
+    trovaFilm(URL)
+        .then(mioFilm => {
+
+            if (mioFilm.Response === 'False') {
+                titoloRicerca.innerHTML = 'Film non trovato';
+                posterRicerca.setAttribute('src', '');
+                trama.innerHTML = '';
+            } else {
+                console.log(mioFilm);
+                stampaFilm(mioFilm.Title, mioFilm.Poster, mioFilm.Plot);
+            }
+
+        })
+        .catch(err => console.log(err));
+}
+
+function stampaFilm(titoloFilm, posterFilm, tramaFilm) {
+    titoloRicerca.innerHTML = titoloFilm;
+    trama.innerHTML = `
+        <h3>Trama di ${titoloFilm}</h3>
+        <p>${tramaFilm}</p>
+    `;
+    posterRicerca.setAttribute('src', posterFilm);
+}
+
+formCerca.addEventListener('submit', e => {
+    e.preventDefault();
+
+    cercaFilm();
+    formCerca.reset();
+});
