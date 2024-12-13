@@ -25,6 +25,27 @@ let anno = document.querySelector('.anno');
 let genere = document.querySelector('.genere');
 let linkFilm = document.querySelector('.link-film');
 
+class Film {
+    /**
+     * @param {String} titolo
+     * @param {String} locandina
+     * @param {String[]} attori
+     * @param {String} durata
+     * @param {String} anno
+     * @param {String[]} genere
+     * @param {String} linkFilm
+     */
+    constructor(titolo, locandina, attori, durata, anno, genere, linkFilm) {
+        this.titolo = titolo;
+        this.locandina = locandina;
+        this.attori = attori;
+        this.durata = durata;
+        this.anno = anno;
+        this.genere = genere;
+        this.linkFilm = linkFilm;
+    }
+}
+
 let films = [];
 
 let filmScelti = [
@@ -50,15 +71,17 @@ filmScelti.forEach(filmScelto => {
             let generi = film.Genre.split(', ');
             let linkFilm = `https://it.wikipedia.org/wiki/${film.Title.replace(' ', '_')}`;
 
-            let filmScelto = {
-                titolo: film.Title,
-                locandina: film.Poster,
-                attori: attori,
-                durata: film.Runtime,
-                anno: film.Year,
-                genere: generi,
-                linkFilm: linkFilm
-            };
+            // let filmScelto = {
+            //     titolo: film.Title,
+            //     locandina: film.Poster,
+            //     attori: attori,
+            //     durata: film.Runtime,
+            //     anno: film.Year,
+            //     genere: generi,
+            //     linkFilm: linkFilm,
+            // };
+
+            let filmScelto = new Film(film.Title, film.Poster, attori, film.Runtime, film.Year, generi, linkFilm)
 
             films.push(filmScelto);
 

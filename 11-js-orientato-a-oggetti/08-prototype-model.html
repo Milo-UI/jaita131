@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Orientato a Oggetti 08 - Prototype model</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>JS Orientato a Oggetti 08 - Prototype model</h1>
+
+        <p>
+            Ogni oggeto in JavaScript ha una proprietà interna chiamata [[Prototype]] che contiene tutti i metodi che quel tipo di oggetto può usare.
+        </p>
+
+        <p>
+            Ogni volta che per esempio creiamo un oggetto Array, le proprietà di quell'array vengono salvate direttamente sulle istanze di quell'array (es.: length). <br>
+            Ma i metodi di tutti gli array che creiamo non vengono salvati nell'oggetto array, ma nel Prototype dell'array, perché tanto hanno tutti gli stessi metodi.
+        </p>
+
+        <img src="img/prototype.jpg" alt="Esempio array prototype">
+
+        <p>
+            Quindi la proprietà [[Prototype]] non fa altro che puntare al prototipo di quel tipo di oggetto. In questo modo tutti gli oggetti sanno dove sono salvati tutti i metodi a loro disposizione e, quando chiamati, sanno come accedervi.
+        </p>
+
+        <p>
+            Quando creiamo degli oggetti, vogliamo che i loro metodi vengano salvati in un loro prototipo e non direttamente nell'oggetto. Questo per due motivi principali:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Efficienza:</strong> Metodi e proprietà definiti nel prototype non vengono duplicati per ogni istanza, risparmio di memoria.
+            </li>
+            <li>
+                <strong>Flessibilità:</strong> È possibile aggiungere o modificare metodi e proprietà al prototype anche dopo che le istanze sono state create.
+            </li>
+        </ul>
+    </main>
+
+    <script src="./js/08-prototype-model.js"></script>
+</body>
+
+</html>
